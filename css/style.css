@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    font-style: italic;
 }
 
 html,body{
@@ -42,7 +43,7 @@ header .desktop ul li{
     float: left;
     font-size: 23px;
     padding: 0 30px;
-    font-style: italic;
+    
 }
 
 header .desktop a{
@@ -52,12 +53,50 @@ header .desktop a{
 
 section.banner{
     width: 100%;
-    height: 750px;
+    height: 650px;
     background-color: black;
     background-image: url(../img/bg.jpg);
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
+}
+
+.text-banner{
+    padding: 100px;
+}
+
+.text-banner-single{
+    width: 250px;
+    margin-top: 20px;
+    padding: 4px 30px;
+    height: 60px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 35px;
+    background-image: url('../img/box-text.png');
+    background-size: 100% 100%;
+}
+
+.text-banner-single:nth-of-type(2){
+    width: 200px;
+    position: relative;
+    left: -10px;
+}
+.text-banner-single:nth-of-type(3){
+    width: 150px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner-single:nth-of-type(4){
+    width: 365px;
+    padding: 6px 30px;
+    position: relative;
+    height: 40px;
+    font-size: 19px;
+    left: -30px;
+    background-image: url('../img/box-white-text.png');
+    color: #000;
 }
 
 @media screen and (max-width: 1400px){
@@ -74,4 +113,18 @@ section.banner{
         background-position: center;
         min-height: 500px;
     }
+}
+
+@media screen and (max-width: 720px){
+    nav.desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+.text-banner{
+    padding: 40px;
+}
+
 }
