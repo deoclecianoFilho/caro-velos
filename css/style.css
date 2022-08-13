@@ -375,6 +375,125 @@ footer p{
     font-size: 19px;
 }
 
+/*VENDA STAST*/
+section.venda{
+    padding: 90px 0;
+    min-height: 80%;
+}
+
+.line-titulo{
+    width: 100%;
+}
+
+.ln2{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 20px;
+    background-color: #000;
+}
+
+.content-venda{
+    margin: 40px;
+}
+
+sidebar{
+    float: left;
+    width: 30%;
+}
+
+search1 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+search1 .barra-preco{
+    width: 100%px;
+    height: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background: #ccc;
+}
+
+.pointer-barra{
+    width: 20px;
+    height: 26px;
+    position: absolute;
+    left: calc(30% - 10px);
+    top: -3px;
+    border-radius: 8px;
+    background: rgb(210, 210, 210);
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p{
+    color: black;
+    font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+search2{
+    margin-top: 40px;
+}
+
+search2 h2{
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input{
+    display: none;
+}
+
+.form-venda-wraper label{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.form-venda-wraper span{
+    padding: o 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*VENDA END*/
+
+
 @media screen and (max-width: 850px){
     .half1-wraper a{
         display: block;
