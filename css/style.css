@@ -292,6 +292,89 @@ section .line-titulo h2{
     font-size: 23px;
 }
 
+section.contato{
+    padding: 80px 2%;
+}
+
+.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+.contato textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+.contato form .input-enviar{
+    text-align: center;
+    
+}
+
+.contato input[type=submit]{
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+footer {
+    padding: 40px 2%;
+    background: #252525;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    padding: 0 35px;
+    font-size: 19px;
+}
+
+footer nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    float:right;
+    color: white;
+    font-size: 19px;
+}
+
 @media screen and (max-width: 850px){
     .half1-wraper a{
         display: block;
@@ -300,6 +383,20 @@ section .line-titulo h2{
 }
 
 @media screen and (max-width: 768px){
+    footer nav{
+        display: none;
+    }
+    footer{
+        text-align: center;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    .w50{
+        width: 100%;
+    }
 
     section.servicos-descricao{
         flex-direction: column;
