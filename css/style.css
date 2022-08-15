@@ -646,10 +646,57 @@ section.venda-single .container{
     background-color: green;
 }
 
-
 /*VENDA SINGLE END*/
+/*SOBRE START*/
 
+section.sobre{
+    min-height: 80%;
+    padding: 60px 2% 20px 2%;
+}
 
+section.sobre .container{
+    max-width: 840px;
+    margin-top: 30px;
+}
+
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-image: url(../img/loja2.jpeg);
+    background-size: 100% 100%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(220,220,220);
+}
+
+.descricao-autor h2{
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.descricao-autor p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.descricao-autor2{
+    margin-top: 20px;
+}
+
+.img-small{
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-color: rgb(220,220,220);
+}
+
+.descricao-autor02{
+    float: left;
+    width: 70%;
+    padding: 0 20px;
+}
+
+/*SOBRE END*/
 
 @media screen and (max-width: 850px){
     .half1-wraper a{
@@ -762,6 +809,19 @@ section.venda-single .container{
 
     .vitrine-destaque a{
         display: inline-block;
+    }
+
+    
+
+    .img-small{
+        width: 80%;
+        padding-top: 80%;
+        margin: 0 10%;
+    }
+    
+    .descricao-autor02{
+        padding: 15px 0;
+        width: 100%;
     }
 
 }
