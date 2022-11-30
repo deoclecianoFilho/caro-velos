@@ -61,6 +61,15 @@ nav.mobile li{
     font-size: 23px;
     padding: 20px 0;
 }
+nav.mobile li:hover{
+    background-color: #b21e1e;
+}
+nav.mobile li:hover a{
+    padding: 20px 200px;
+    color: #fff;
+}
+
+
 
 nav.mobile a{
     text-decoration: none;

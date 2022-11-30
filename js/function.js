@@ -124,5 +124,47 @@ $(function(){
         return false
      })
 
+     $('.mobile').click(function(){
+        $('.mobile ul').slideToggle()
+     }
+     )
+
+    /*depoimentos*/ 
+    
+    var amtDepoimento = $('.depoimento-single p').length
+    var Depoimento = $('.depoimento-single .depoimento').length
+    var curIndex = 0
+    iniciarDepoimentos()
+    navegarDepoimentos()
+
+    function iniciarDepoimentos(){
+        $('.depoimento-single .depoimento').hide()
+        $('.depoimento-single .depoimento').eq(0).show()
+        $('.depoimento-single p').hide()
+        $('.depoimento-single p').eq(0).show()
+    }
+
+    
+    $('[next]').click(function(){
+        curIndex++
+        if(curIndex >= amtDepoimento)
+        curIndex = 0
+        $('.depoimento-single p').hide()
+        $('.depoimento-single p').eq(curIndex).show()
+        $('.depoimento-single .depoimento').hide()
+        $('.depoimento-single .depoimento').eq(curIndex).show()
+    })
+
+    function navegarDepoimentos(){
+        $('[prev]').click(function(){
+            curIndex--
+            if(curIndex < 0)
+                curIndex = amtDepoimento-1
+                $('.depoimento-single p').hide()
+                $('.depoimento-single p').eq(curIndex).show()
+                $('.depoimento-single .depoimento').hide()
+                $('.depoimento-single .depoimento').eq(curIndex).show()
+        })
+}
 
 })
